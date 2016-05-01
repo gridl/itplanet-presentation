@@ -11,12 +11,12 @@
 %\framesubtitle{Требования}
 Требования:
 \begin{itemize}
-	\item устранение единых точек отказа (резервные линки, RAID)
-	\item защита от недоброжелателей (DDoS, флуд)
+	\item устранение единых точек отказа %(резервные линки, RAID)
+	\item защита от недоброжелателей %(DDoS, флуд)
 	\item \textbf{использование свободного ПО по возможности}
 	\item документирование
 	\item автоматизация
-	\item разработка эффективных тарифных планов хостинга и VPS
+	\item разработка эффективных тарифных планов хостинга
 	\item использование в бизнесе
 \end{itemize}
 \end{frame}
@@ -30,6 +30,7 @@
 	\item всего один админ, он же архитектор (некрасиво звучит этот пункт)
 	\item отсутствие опыта работы с виртуализацией
 	\item желание что-то построить
+	\item ??? что-то еще упустил ???
 \end{itemize}
 \end{frame}
 
@@ -49,13 +50,13 @@
 
 %-------------------------------------------------------------------------------
 
-\section{Используемое свободное ПО}
+\section{Используемое свободное ПО !(не очень заголовок)}
 
 \begin{frame}
 \frametitle{\insertsection}
 %\framesubtitle{Подпункт 2}
 \begin{itemize}
-	\item Linux
+	\item ОС Linux
 	\item мониторинг
 	\item виртуализация
 	\item автоматизированное управление конфигурациями
@@ -74,7 +75,7 @@
 \frametitle{\insertsection}
 \framesubtitle{CentOS 7 (GPL)}
 \begin{itemize}
-	\item гораздо популярнее на серверах чем Windows/FreeBSD
+	\item 494 из 500 крупнейших суперкомпьютеров работают на Linux
 	\item изобилие серверного ПО
 	\item поддержка 6-10 лет (обновление пакетов, исправление уязвимостей и багов)
 	\item бесплатно
@@ -117,12 +118,48 @@
 
 \begin{frame}
 \frametitle{\insertsection}
-\framesubtitle{Ansible (GPL)}
+\framesubtitle{Ansible (GPL) + git (GPLv2)}
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{ansible}
 	 \end{center}
 \end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\section{Виртуализация}
+
+\begin{frame}
+\frametitle{\insertsection}
+\framesubtitle{OpenVZ (GPLv2) + KVM (GPL/LGPL)}
+\begin{figure}[h]
+	\begin{center}
+		\begin{multicols}{2}
+		\includegraphics[width=\linewidth]{cont-virt} \\
+		OpenVZ \pause \\
+		\uncover<2->{\includegraphics[width=\linewidth]{full-virt}}
+		KVM
+		\end{multicols}
+	 \end{center}
+	\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\section{Стек ПО для хостинга}
+
+\begin{frame}
+\frametitle{\insertsection}
+%\framesubtitle{LAMP}
+\begin{figure}[h]
+	\begin{center}
+		\begin{multicols}{2}
+		\includegraphics[width=\linewidth]{lamp} \\
+		\includegraphics[width=\linewidth]{mail}
+		\end{multicols}
+	 \end{center}
+	\end{figure}
 \end{frame}
 
 %-------------------------------------------------------------------------------
