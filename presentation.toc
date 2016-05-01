@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Пункт 1}{2}{0}{1}
+\beamer@sectionintoc {2}{Пункт 2}{4}{0}{2}
+\beamer@sectionintoc {3}{Пункт 3}{8}{0}{3}
+\beamer@sectionintoc {4}{Выводы}{11}{0}{4}
+\beamer@sectionintoc {5}{Информационные источники}{12}{0}{5}

@@ -68,7 +68,7 @@
         \vbox{}\vskip-0.7ex
         \begin{wrapfigure}{r}{0.12\textwidth}
             \vskip-3ex
-            \includegraphics[width=0.075\textwidth]{images/SevGU-main}
+            %\includegraphics[width=0.075\textwidth]{images/by-sa.eps}
         \end{wrapfigure}
         \strut\insertframetitle
 
@@ -82,15 +82,16 @@
 \setbeamertemplate{footline}{
     \leavevmode%
     \hbox{%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,center]{WhiteOnBlue}
+        \begin{beamercolorbox}[wd=.2\paperwidth,ht=2ex,dp=1ex,left]{WhiteOnBlue}
             \usebeamerfont{author in head/foot}
-            \insertshortauthor
+            %\hspace*{2ex}\insertshortauthor
         \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,center]{WhiteOnBlue}
+        \begin{beamercolorbox}[wd=.6\paperwidth,ht=2ex,dp=1ex,center]{WhiteOnBlue}
             \usebeamerfont{title in head/foot}
-            \insertshortinstitute
+            %\insertshortinstitute
+            \insertshorttitle
         \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,right]{WhiteOnBlue}
+        \begin{beamercolorbox}[wd=.2\paperwidth,ht=2ex,dp=1ex,right]{WhiteOnBlue}
             \usebeamerfont{date in head/foot}
             \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
         \end{beamercolorbox}%
@@ -101,13 +102,13 @@
 %%% Главный логотип
 \addtobeamertemplate{title page}{
     \leavevmode%
-    \vspace{-.23cm}
+    \vspace{-.30cm}
     \hbox{%
-    \begin{beamercolorbox}[wd=\paperwidth,ht=0.3\paperheight]{frametitle}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=0.2\paperheight]{frametitle}
         \begin{center}
-            \includegraphics[height=0.28\paperheight]{images/SevGU-main}
-            \vspace{-0.025\paperheight}
+            \href{https://github.com/Amet13/itplanet-presentation}{\includegraphics[height=0.08\paperheight]{images/by-sa.eps}}
+            \vspace{0.03\paperheight}
         \end{center}
     \end{beamercolorbox}}
 }
-{\vspace{3cm}}
+{\vspace{0cm}}
