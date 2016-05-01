@@ -1,0 +1,27 @@
+%!TEX TS-program = xelatex
+
+% Шаблон \LaTeX для использования в презентациях
+% Автор: Амет Умеров (admin@amet13.name)
+% Дата создания: 9 июня 2014 года
+% Для удобной работы с файлом рекомендую использовать ОС GNU/Linux, редактор TeXStudio или Atom с плагином language-latex и движок XeLaTeX
+% Для построения графиков можно воспользоваться пакетом GeoGebra, а также сайтом http://texample.net/tikz/
+
+\documentclass[xetex,mathserif,serif,t]{beamer} % [t], [c], или [b] --- вертикальное выравнивание на слайдах (верх, центр, низ)
+%\documentclass[aspectratio=169,xetex,mathserif,serif,t]{beamer} % Если хотим соотношение сторон 16:9
+\input{preamble.tex}
+
+\title{Использование свободного ПО в инфраструктуре облачных услуг}
+%\subtitle{Подзаголовок}
+
+%%% Основные параметры презентации
+\author[Умеров Амет]{Умеров Амет}
+% \author[Иванов И.И.]{Иванов Иван Иванович, СевГУ} % Один автор
+\institute[СевГУ]{\vspace{-15ex}Севастопольский государственный университет}
+\date{
+    %\vspace*{5ex}
+    %\includegraphics[width=0.15\textwidth]{images/by-sa.eps}
+}
+
+\begin{document}
+\input{slides.tex}
+\end{document}
