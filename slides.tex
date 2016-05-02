@@ -151,7 +151,7 @@
 
 \begin{frame}
 \frametitle{\insertsection}
-%\framesubtitle{LAMP}
+\framesubtitle{LAMP+Nginx (GPL/Apache), exim+dovecot+spamassasin+roundcube (GPL/LGPL/MIT)}
 \begin{figure}[h]
 	\begin{center}
 		\begin{multicols}{2}
@@ -164,92 +164,51 @@
 
 %-------------------------------------------------------------------------------
 
-\section{QQQQQQ}
+\section{Резервное копирование}
 
 \begin{frame}
 \frametitle{\insertsection}
-%\framesubtitle{Подпункт 2}
-\begin{enumerate}
-	\item Элемент 1
-	\uncover<2->{\item Элемент 2}
-	\uncover<3->{\item Элемент 3*}
-\end{enumerate}
+\framesubtitle{rsync (GPL)}
 \begin{figure}[h]
 	\begin{center}
-		\begin{multicols}{2}
-		\includegraphics[width=0.3\linewidth]{one} \pause \\
-		\uncover<2->{\includegraphics[width=0.3\linewidth]{two}} \pause \\
-		\end{multicols}
-		\uncover<3->{\includegraphics[width=0.15\linewidth]{three}}
+		\includegraphics[width=\linewidth]{backup}
 	 \end{center}
 \end{figure}
-\vfill
-\footnotesize{* Какая-то сноска}
 \end{frame}
 
 %-------------------------------------------------------------------------------
 
-\section{Пункт 3}
+\section{Вирусы и вредоносы}
 
 \begin{frame}
 \frametitle{\insertsection}
-\framesubtitle{Подпункт 1}
+\framesubtitle{Linux Malware Detect (GPL)}
+Возможности:
 \begin{itemize}
-	\begin{multicols}{2}
-	\item Элемент 1
-	\item Элемент 1
-	\item Элемент 1
-	\item Элемент 1
-	\item Элемент 1
-	\item Элемент 1 \pause \columnbreak
-	\item Элемент 2
-	\item Элемент 2
-	\item Элемент 2
-	\end{multicols}
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{\insertsection}
-\framesubtitle{Подпункт 2}
-\begin{itemize}
-	\item Элемент 1
-	\begin{itemize}
-		\item Подэлемент 1
-		\item Подэлемент 2
-		\item Подэлемент 3
-	\end{itemize}
-	\item Элемент 2
-	\item Элемент 3
+	\item обнаружение вредоносов по хэшу MD5
+	\item обновление сигнатур по крону
+	\item отправка на rfxn.com подозрительных файлов для внесения в базу сигнатур
+	\item выборочное сканирование путей
+	\item exclude-файлы
+	\item правила удаление инфицированных base64 и gzinflate файлов
+	\item карантин
+	\item хранение отчетов сканирования и отправка по почте
+	\item возможность поиска по сигнатурам ClamAV
 \end{itemize}
 \end{frame}
 
 %-------------------------------------------------------------------------------
 
-\section{Выводы}
+\section{Защита сети}
 
 \begin{frame}
 \frametitle{\insertsection}
-\begin{itemize}
-	\item Элемент 1
-	\item Элемент 2
-	\item Элемент 3
-	\item Элемент 4
-\end{itemize}
-\end{frame}
-
-%-------------------------------------------------------------------------------
-
-\section{Информационные источники}
-
-\begin{frame}
-\frametitle{\insertsection}
-\begin{itemize}
-	\item Источник 1: \url{http://1.example.com}
-	\item Источник 2: \url{http://2.example.com}
-	\item Источник 3: \url{http://3.example.com}
-	\item Источник 4: \url{http://4.example.com}
-\end{itemize}
+\framesubtitle{ddos-deflate (Artistic License) + IPTables/fail2ban/ipset (GPL)}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\linewidth]{iptables}
+	 \end{center}
+\end{figure}
 \end{frame}
 
 %-------------------------------------------------------------------------------
