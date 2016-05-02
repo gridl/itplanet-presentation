@@ -8,7 +8,6 @@
 
 \begin{frame}
 \frametitle{\insertsection}
-%\framesubtitle{Требования}
 Требования:
 \begin{itemize}
 	\item устранение единых точек отказа %(резервные линки, RAID)
@@ -23,7 +22,6 @@
 
 \begin{frame}
 \frametitle{\insertsection}
-%\framesubtitle{Подпункт 2}
 Возможности:
 \begin{itemize}
 	\item весьма ограниченный бюджет
@@ -40,7 +38,6 @@
 
 \begin{frame}
 \frametitle{\insertsection}
-%\framesubtitle{Подпункт 1}
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{infrast-scheme}
@@ -54,7 +51,6 @@
 
 \begin{frame}
 \frametitle{\insertsection}
-%\framesubtitle{Подпункт 2}
 \begin{itemize}
 	\item ОС Linux
 	\item мониторинг
@@ -101,6 +97,10 @@
 	 \end{center}
 \end{figure}
 \end{frame}
+
+%-------------------------------------------------------------------------------
+
+\section{Метрики}
 
 \begin{frame}
 \frametitle{\insertsection}
@@ -186,13 +186,11 @@
 Возможности:
 \begin{itemize}
 	\item обнаружение вредоносов по хэшу MD5
-	\item обновление сигнатур по крону
 	\item отправка на rfxn.com подозрительных файлов для внесения в базу сигнатур
 	\item выборочное сканирование путей
 	\item exclude-файлы
-	\item правила удаление инфицированных base64 и gzinflate файлов
+	\item правила удаление инфицированных base64 и gzinflate вставок из файлов
 	\item карантин
-	\item хранение отчетов сканирования и отправка по почте
 	\item возможность поиска по сигнатурам ClamAV
 \end{itemize}
 \end{frame}
@@ -207,6 +205,20 @@
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{iptables}
+	 \end{center}
+\end{figure}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\section{Панели управления для клиентов}
+
+\begin{frame}
+\frametitle{\insertsection}
+\framesubtitle{Vesta Control Panel (GPLv3)}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\linewidth]{vesta}
 	 \end{center}
 \end{figure}
 \end{frame}
