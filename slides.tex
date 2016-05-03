@@ -12,9 +12,9 @@
 \begin{itemize}
 	\item устранение единых точек отказа %(резервные линки, RAID)
 	\item защита от недоброжелателей %(DDoS, флуд)
-	\item \textbf{использование свободного ПО по возможности}
+	\item \textbf{использование свободного ПО (по возможности?? или перефразировать?)}
 	\item документирование
-	\item автоматизация
+	\item автоматизация (мб. это итак очевидно что нужно все документировать и автоматизировать?)
 	\item разработка эффективных тарифных планов хостинга
 	\item использование в бизнесе
 \end{itemize}
@@ -22,7 +22,7 @@
 
 \begin{frame}
 \frametitle{\insertsection}
-Возможности:
+Возможности: (стоит ли вообще иметь этот слайд? или как-то грамотно изменить его?)
 \begin{itemize}
 	\item весьма ограниченный бюджет
 	\item всего один админ, он же архитектор (некрасиво звучит этот пункт)
@@ -41,7 +41,7 @@
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{infrast-scheme}
-	 \end{center}
+	\end{center}
 \end{figure}
 \end{frame}
 
@@ -72,7 +72,7 @@
 \framesubtitle{CentOS 7 (GPL)}
 \begin{itemize}
 	\item 494 из 500 крупнейших суперкомпьютеров работают на Linux
-	\item изобилие серверного ПО
+	\item (изобилие)? серверного ПО
 	\item поддержка 6-10 лет (обновление пакетов, исправление уязвимостей и багов)
 	\item бесплатно
 	\item простая сборка пакетов
@@ -94,7 +94,7 @@
 		\includegraphics[width=\linewidth]{nagios} \pause \\
 		\uncover<2->{\includegraphics[width=\linewidth]{icinga2}}
 		\end{multicols}
-	 \end{center}
+	\end{center}
 \end{figure}
 \end{frame}
 
@@ -108,13 +108,13 @@
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{munin}
-	 \end{center}
+	\end{center}
 \end{figure}
 \end{frame}
 
 %-------------------------------------------------------------------------------
 
-\section{Управление конфигурациями}
+\section{Автоматизация управления конфигурациями}
 
 \begin{frame}
 \frametitle{\insertsection}
@@ -122,7 +122,7 @@
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{ansible}
-	 \end{center}
+	\end{center}
 \end{figure}
 \end{frame}
 
@@ -141,8 +141,8 @@
 		\uncover<2->{\includegraphics[width=\linewidth]{full-virt}}
 		KVM
 		\end{multicols}
-	 \end{center}
-	\end{figure}
+	\end{center}
+\end{figure}
 \end{frame}
 
 %-------------------------------------------------------------------------------
@@ -158,8 +158,8 @@
 		\includegraphics[width=\linewidth]{lamp} \\
 		\includegraphics[width=\linewidth]{mail}
 		\end{multicols}
-	 \end{center}
-	\end{figure}
+	\end{center}
+\end{figure}
 \end{frame}
 
 %-------------------------------------------------------------------------------
@@ -172,7 +172,7 @@
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{backup}
-	 \end{center}
+	\end{center}
 \end{figure}
 \end{frame}
 
@@ -189,9 +189,9 @@
 	\item отправка на rfxn.com подозрительных файлов для внесения в базу сигнатур
 	\item выборочное сканирование путей
 	\item exclude-файлы
-	\item правила удаление инфицированных base64 и gzinflate вставок из файлов
+	\item удаление инфицированных base64 и gzinflate вставок
 	\item карантин
-	\item возможность поиска по сигнатурам ClamAV
+	\item поиск по сигнатурам ClamAV
 \end{itemize}
 \end{frame}
 
@@ -205,7 +205,7 @@
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{iptables}
-	 \end{center}
+	\end{center}
 \end{figure}
 \end{frame}
 
@@ -219,7 +219,7 @@
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{vesta}
-	 \end{center}
+	\end{center}
 \end{figure}
 \end{frame}
 
@@ -232,7 +232,7 @@
 ОС:
 \begin{itemize}
 	\item RHEL 7 Standart --- \$900/год за 1 сервер
-	\item SLES --- \$700/год за 1 сервер
+	\item SLES 12 --- \$700/год за 1 сервер
 \end{itemize}
 Мониторинг:
 \begin{itemize}
@@ -246,7 +246,7 @@
 \end{itemize}
 Защита от вредоносного ПО:
 \begin{itemize}
-	\item Virusdie --- \$20/год за первый сайт, ~\$1/год за последующие сайты
+	\item Virusdie --- \$20/год за первый сайт, \$2/год за последующие сайты
 \end{itemize}
 \end{frame}
 
