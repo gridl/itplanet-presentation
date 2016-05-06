@@ -1,6 +1,6 @@
 itplanet-presentation
 =====================
-Презентация к моему [диплому](https://github.com/Amet13/bachelor-diploma) в конкурсе "[Лучший свободный диплом](http://world-it-planet.org/projects/competition_detail.php?ID=41543)"
+Презентация к моему [диплому](https://github.com/Amet13/bachelor-diploma) для конкурса "[Лучший свободный диплом](http://world-it-planet.org/projects/competition_detail.php?ID=41543)"
 
 Структура
 ---------
@@ -24,7 +24,9 @@ itplanet-presentation
 
 Как установить LaTeX: http://blog.amet13.name/2014/06/latex.html
 
-Обязательно должен быть установлен пакет `latex-beamer`, не забывайте об этом.
+Обязательно должен быть установлен пакет `latex-beamer`.
+
+Используется шрифт PT Sans, скачать его можно [тут](http://fonts.ru/public/).
 
 Для пользователей GNU/Linux можно воспользоваться Makefile.
 Пример компиляции проекта:
