@@ -26,7 +26,8 @@
 \hypersetup{
     unicode=true,          % русские буквы в раздела PDF
     colorlinks=true,       % false: ссылки в рамках; true: цветные
-    linkcolor=white,       % внутренние ссылки
+%    linkcolor=white,       % внутренние ссылки
+    linkcolor=SevGUblue,   % внутренние ссылки
     citecolor=SevGUblue,   % на библиографию
     filecolor=SevGUblue,   % на файлы
     urlcolor=SevGUblue     % на URL
@@ -40,8 +41,11 @@
 %%% Установка цветов для различных объектов (см. Beamer User Guide)
 \usecolortheme[named=SevGUblue]{structure}
 \setbeamercolor{background canvas}{bg=white}
-\setbeamercolor{frametitle}{bg=SevGUblue}
-\setbeamercolor{frametitle}{fg=white}
+%\setbeamercolor{frametitle}{bg=SevGUblue}
+%\setbeamercolor{frametitle}{fg=white}
+\setbeamercolor{frametitle}{bg=white} % Белый фон
+\setbeamercolor{frametitle}{fg=SevGUblue} % Синий текст
+
 \setbeamercolor{headline}{bg=SevGUblue}
 \setbeamercolor{alerted text}{fg=SevGUred}
 \setbeamercolor{itemize item}{fg=SevGUblue}
@@ -66,8 +70,6 @@
     \nointerlineskip
     \begin{beamercolorbox}[sep=0.3cm,wd=\paperwidth]{frametitle} % Маленький логотип
         \vbox{}\vskip-0.7ex
-        \begin{wrapfigure}{r}{0.12\textwidth}
-        \end{wrapfigure}
         \strut\insertframetitle \\
         \small\strut\insertframesubtitle
         \vskip-1ex
@@ -79,31 +81,17 @@
 \setbeamertemplate{footline}{
     \leavevmode%
     \hbox{%
-        \begin{beamercolorbox}[wd=.2\paperwidth,ht=2ex,dp=1ex,left]{WhiteOnBlue}
+        \begin{beamercolorbox}[wd=.2\paperwidth,ht=2ex,dp=1ex,left]{BlueOnWhite}
             \usebeamerfont{author in head/foot}
         \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.6\paperwidth,ht=2ex,dp=1ex,center]{WhiteOnBlue}
+        \begin{beamercolorbox}[wd=.6\paperwidth,ht=2ex,dp=1ex,center]{BlueOnWhite}
             \usebeamerfont{title in head/foot}
-            \insertshorttitle
+            %\insertshorttitle % Не вставляем название презентации в нижний бар
         \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.2\paperwidth,ht=2ex,dp=1ex,right]{WhiteOnBlue}
+        \begin{beamercolorbox}[wd=.2\paperwidth,ht=2ex,dp=1ex,right]{BlueOnWhite}
             \usebeamerfont{date in head/foot}
             \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
         \end{beamercolorbox}%
     }
     \vskip0pt%
 }
-
-%%% Главный логотип
-\addtobeamertemplate{title page}{
-    \leavevmode%
-    \vspace{-.30cm}
-    \hbox{%
-    \begin{beamercolorbox}[wd=\paperwidth,ht=0.2\paperheight]{frametitle}
-        \begin{center}
-            \href{https://github.com/Amet13/itplanet-presentation}{\includegraphics[height=0.08\paperheight]{images/by-sa.eps}}
-            \vspace{0.03\paperheight}
-        \end{center}
-    \end{beamercolorbox}}
-}
-{\vspace{0cm}}
