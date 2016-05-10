@@ -27,9 +27,8 @@
 \begin{frame}
 \frametitle{\insertsection}
 \begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=\linewidth]{infrast-scheme}
-	\end{center}
+	\center
+	\includegraphics[width=\linewidth]{infrast-scheme}
 \end{figure}
 \end{frame}
 
@@ -57,12 +56,11 @@
 \frametitle{\insertsection}
 \framesubtitle{Nagios\uncover<2->{ > Icinga2 (GPLv2)}}
 \begin{figure}[h]
-	\begin{center}
-		\begin{multicols}{2}
+	\center
+	\begin{multicols}{2}
 		\includegraphics[width=\linewidth]{nagios} \pause \\
 		\uncover<2->{\includegraphics[width=\linewidth]{icinga2}}
-		\end{multicols}
-	\end{center}
+	\end{multicols}
 \end{figure}
 \end{frame}
 
@@ -74,9 +72,8 @@
 \frametitle{\insertsection}
 \framesubtitle{Munin (GPL)}
 \begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=\linewidth]{munin}
-	\end{center}
+	\center
+	\includegraphics[width=\linewidth]{munin}
 \end{figure}
 \end{frame}
 
@@ -88,9 +85,8 @@
 \frametitle{\insertsection}
 \framesubtitle{Ansible (GPL)}
 \begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=\linewidth]{ansible}
-	\end{center}
+	\center
+	\includegraphics[width=\linewidth]{ansible}
 \end{figure}
 \end{frame}
 
@@ -102,14 +98,13 @@
 \frametitle{\insertsection}
 \framesubtitle{OpenVZ (GPLv2)\uncover<2->{ + KVM (GPL/LGPL)}}
 \begin{figure}[h]
-	\begin{center}
-		\begin{multicols}{2}
+	\center
+	\begin{multicols}{2}
 		\includegraphics[width=\linewidth]{cont-virt} \\
 		OpenVZ \pause \\
 		\uncover<2->{\includegraphics[width=\linewidth]{full-virt}}
 		KVM
-		\end{multicols}
-	\end{center}
+	\end{multicols}
 \end{figure}
 \end{frame}
 
@@ -121,12 +116,11 @@
 \frametitle{\insertsection}
 \framesubtitle{LAMP+Nginx, Exim+Dovecot+SpamAssassin+Roundcube (GPL/LGPL/MIT/Apache)}
 \begin{figure}[h]
-	\begin{center}
-		\begin{multicols}{2}
+	\center
+	\begin{multicols}{2}
 		\includegraphics[width=\linewidth]{lamp} \\
 		\includegraphics[width=\linewidth]{mail}
-		\end{multicols}
-	\end{center}
+	\end{multicols}
 \end{figure}
 \end{frame}
 
@@ -138,9 +132,8 @@
 \frametitle{\insertsection}
 \framesubtitle{rsync (GPL)}
 \begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=\linewidth]{backup}
-	\end{center}
+	\center
+	\includegraphics[width=\linewidth]{backup}
 \end{figure}
 \end{frame}
 
@@ -170,23 +163,21 @@
 \frametitle{\insertsection}
 \framesubtitle{ddos-deflate (Artistic License) + IPTables/fail2ban/ipset (GPL)}
 \begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=\linewidth]{iptables}
-	\end{center}
+	\center
+	\includegraphics[width=\linewidth]{iptables}
 \end{figure}
 \end{frame}
 
 %-------------------------------------------------------------------------------
 
-\section{Система отслеживания ошибок}
+\section{Система учета заявок}
 
 \begin{frame}
 \frametitle{\insertsection}
 \framesubtitle{MantisBT (GPL)}
 \begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=\linewidth]{mantis}
-	\end{center}
+	\center
+	\includegraphics[width=\linewidth]{mantis}
 \end{figure}
 \end{frame}
 
@@ -198,9 +189,8 @@
 \frametitle{\insertsection}
 \framesubtitle{Vesta Control Panel (GPLv3)}
 \begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=\linewidth]{vesta}
-	\end{center}
+	\center
+	\includegraphics[width=\linewidth]{vesta}
 \end{figure}
 \end{frame}
 
@@ -211,21 +201,18 @@
 \begin{frame}
 \frametitle{\insertsection}
 \begin{figure}[h]
-	\begin{center}
-		\begin{tabular}{|l|p{7.5cm}|}
-			\hline
-			\bf{Open Source} & \bf{Closed Source} \\ \hline
-			CentOS 7 & RHEL 7 --- \$900/год за 1 сервер \\
-			Debian 8 & SLES 12 --- \$700/год за 1 сервер \\ \hline
-			Nagios & Sensu --- \$600/год за 50 серверов \\
-			Munin & Opsview --- \$935/год за 50 серверов \\ \hline
-			OpenVZ & Virtuozzo --- \$6200/год за 100 контейнеров \\
-			KVM & vCenter Server --- \$1750/год за 1 CPU \\ \hline
-			Maldet & Virusdie --- \$20/год + \$2/год за сайт \\
-			MantisBT & Jira --- \$1800 за 25 пользователей \\
-			\hline
-		\end{tabular}
-	\end{center}
+	\begin{tabular}{|l|l|}
+		\hline
+		\bf{Open Source} & \bf{Closed Source} \\ \hline
+		CentOS 7 & RHEL 7 --- \$900/год за 1 сервер \\
+		Debian 8 & SLES 12 --- \$700/год за 1 сервер \\ \hline
+		Nagios & Sensu --- \$600/год за 50 серверов \\
+		Munin & Opsview --- \$935/год за 50 серверов \\ \hline
+		OpenVZ & Virtuozzo --- \$6200/год за 100 контейнеров \\
+		KVM & vCenter Server --- \$1750/год за 1 CPU \\ \hline
+		Maldet & Virusdie --- \$20/год + \$2/год за сайт \\
+		MantisBT & Jira --- \$1800 за 25 пользователей \\ \hline
+	\end{tabular}
 \end{figure}
 \end{frame}
 

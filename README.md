@@ -18,7 +18,7 @@ itplanet-presentation
 
 `slides.tex` — само содержимое презентации
 
-`images/` — сюда складываются изображения, которые будут использоваться в презентации
+`images/` — сюда складываются изображения, которые используются в презентации
 
 Работа с LaTeX
 --------------
@@ -30,7 +30,9 @@ itplanet-presentation
 
 В качестве основного шрифта используется PT Sans, скачать его можно [тут](http://fonts.ru/public/).
 
-Для пользователей GNU/Linux можно воспользоваться Makefile.
+Компиляция проекта
+------------------
+Для этого можно воспользоваться Makefile.
 Пример компиляции проекта:
 ```bash
 git clone https://github.com/Amet13/itplanet-presentation.git
@@ -46,7 +48,7 @@ make clean
 16:9
 ----
 Есть возможность использовать соотношение сторон не 4:3, а 16:9.
-Для этого нужно в файле `presentation.tex` закомментировать и раскомментировать строки:
+Для этого нужно в файле `presentation.tex` привести данные строки к виду:
 ```tex
 %\documentclass[xetex,mathserif,serif,t]{beamer}
 \documentclass[aspectratio=169,xetex,mathserif,serif,t]{beamer}

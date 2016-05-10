@@ -1,6 +1,7 @@
-% Тема СевГУ для шаблона презентации Beamer
+% Модификация темы СевГУ для шаблона презентации Beamer
 % Автор: Амет Умеров (admin@amet13.name)
-% Дата создания: 10 июня 2014 года
+% Дата создания шаблона: 10 июня 2014 года
+% Последние изменения: май 2016
 
 %%% Необходимые пакеты для работы с презентацией
 \usepackage{wrapfig}
@@ -13,8 +14,7 @@
 \usefonttheme{default} % Стандартный шрифт темы
 
 %%% Определение цветовых схем
-\definecolor{SevGUblue}{cmyk}{1,0.66,0,0.02}      % Pantone 286
-%\definecolor{SevGUblue}{cmyk}{0.429,0.209,0,0.251}  % RGB(109,151,191)
+\definecolor{SevGUblue}{cmyk}{1,0.66,0,0.02}        % Pantone 286
 \definecolor{SevGUgreen}{cmyk}{0.69,0,1,0}          % Pantone 361
 \definecolor{SevGUred}{cmyk}{0,0.95,1,0.29}         % Pantone 484
 \definecolor{SevGUorange}{cmyk}{0,0.42,0.77,0}      % Pantone 131
@@ -40,8 +40,8 @@
 %%% Установка цветов для различных объектов (см. Beamer User Guide)
 \usecolortheme[named=SevGUblue]{structure}
 \setbeamercolor{background canvas}{bg=white}
-\setbeamercolor{frametitle}{bg=white} % Белый фон
-\setbeamercolor{frametitle}{fg=SevGUblue} % Синий текст
+\setbeamercolor{frametitle}{bg=white}       % Белый фон
+\setbeamercolor{frametitle}{fg=SevGUblue}   % Синий текст
 
 \setbeamercolor{headline}{bg=SevGUblue}
 \setbeamercolor{alerted text}{fg=SevGUred}
@@ -63,9 +63,9 @@
 
 %%% Заголовки и логотипы
 \setbeamertemplate{headline}[default]{} % Пустой заголовок
-\setbeamertemplate{frametitle}{         % Титул с логотипом
+\setbeamertemplate{frametitle}{
     \nointerlineskip
-    \begin{beamercolorbox}[sep=0.3cm,wd=\paperwidth]{frametitle} % Маленький логотип
+    \begin{beamercolorbox}[sep=0.3cm,wd=\paperwidth]{frametitle}
         \vbox{}\vskip-0.7ex
         \strut\insertframetitle \\
         \small\strut\insertframesubtitle
