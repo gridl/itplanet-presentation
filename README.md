@@ -14,7 +14,7 @@ itplanet-presentation
 
 `presentation.tex`— компилируемый файл, является "костяком" проекта
 
-`report.txt` — доклад к презентации
+`report.md` — доклад к презентации
 
 `slides.tex` — само содержимое презентации
 

@@ -17,7 +17,4 @@ clean:
 	*.synctex.gz \
 	*.toc \
 	*.snm \
-	*.nav \
-	*.xml \
-	*.blg \
-	*.bcf
+	*.nav
